@@ -11,7 +11,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#8972d9"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
@@ -20,14 +22,17 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.mohsinking2002.expensify"
+      "package": "com.mohsinking2002.expensify",
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "0a0384bc-65e9-47e7-9da9-2ea2d8514b25"
+        "projectId": "927b9f25-aea3-48f6-a328-fbbcb129beca"
       }
     },
     "plugins": [
@@ -37,6 +42,7 @@
           "photosPermission": "The app accesses your photos to let you share them with your friends."
         }
       ]
-    ]
+    ],
+    "owner": "mohsinking2002"
   }
 }
