@@ -7,7 +7,7 @@ import { users } from "../apis/users";
 import { shuffleArray } from "../Utils/Helpers";
 import Loader from "../Components/Loader";
 
-const Chats = () => {
+const Chats = ({ navigation }) => {
   const [loading, setLoading] = useState(false);
   const [userData, setUserData] = useState(users);
 
@@ -40,8 +40,7 @@ const Chats = () => {
                 avatar={user.avatar}
                 subtitle={`Active ${user.id + 5}m ago`}
                 styles={"mb-[13px]"}
-                link={`ChatPage`}
-                data={user}
+                onPress={() => navigation.navigate("ChatPage", { data: user })}
               />
             ))}
           </View>

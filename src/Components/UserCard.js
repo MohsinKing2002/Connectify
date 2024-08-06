@@ -8,15 +8,14 @@ const UserCard = ({
   avatar = null,
   name = null,
   subtitle = null,
-  link = null,
+  onPress,
   styles = null,
-  data = null,
 }) => {
   const navigation = useNavigation();
 
   return (
     <TouchableOpacity
-      // onPress={() => link && navigation.navigate(link)}
+      onPress={onPress}
       className={`flex flex-row items-center ${styles}`}
     >
       <Avatar.Image size={40} source={avatar ? { uri: avatar } : Img} />

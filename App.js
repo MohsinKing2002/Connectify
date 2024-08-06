@@ -6,8 +6,6 @@ import Starter from "./src/Screens/Starter";
 import Home from "./src/Screens/Home";
 import Find from "./src/Screens/Find";
 import Account from "./src/Screens/Account";
-import Login from "./src/Screens/Login";
-import Register from "./src/Screens/Register";
 import Create from "./src/Screens/Create";
 import Chats from "./src/Screens/Chats";
 import ChatPage from "./src/Screens/ChatPage";
@@ -32,16 +30,7 @@ export default function App() {
             options={{ headerShown: false }}
             component={Home}
           />
-          <Stack.Screen
-            name="Login"
-            options={{ headerShown: false }}
-            component={Login}
-          />
-          <Stack.Screen
-            name="Register"
-            options={{ headerShown: false }}
-            component={Register}
-          />
+
           <Stack.Screen
             name="Find"
             options={{ headerShown: false }}

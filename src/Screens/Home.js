@@ -46,7 +46,6 @@ const Home = () => {
               avatar={post.owner.avatar}
               name={post.owner.name}
               subtitle={post.owner.subtitle}
-              link={post.owner.id}
               postImg={post.img}
               caption={post.caption}
             />
@@ -69,7 +68,6 @@ const Home = () => {
               avatar={post.owner.avatar}
               name={post.owner.name}
               subtitle={post.owner.subtitle}
-              link={post.owner.id}
               postImg={post.img}
               caption={post.caption}
             />

@@ -10,7 +10,7 @@ const PostCard = ({
   avatar = null,
   name = null,
   subtitle = null,
-  link = null,
+  onPress,
 }) => {
   const [isLiked, setIsLiked] = useState(false);
   const [isBookmarked, setIsBookmarked] = useState(false);
@@ -19,7 +19,12 @@ const PostCard = ({
     <Card className="bg-white p-2 mb-3 rounded-md" mode="contained">
       {/******************** user section ******************************/}
       <View className="flex flex-row items-center justify-between">
-        <UserCard avatar={avatar} name={name} subtitle={subtitle} link={link} />
+        <UserCard
+          avatar={avatar}
+          name={name}
+          subtitle={subtitle}
+          onPress={onPress}
+        />
         <TouchableOpacity>
           <Entypo name="dots-three-vertical" size={18} color="purple" />
         </TouchableOpacity>
