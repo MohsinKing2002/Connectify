@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const Create = () => {
   const [image, setImage] = useState(null);
-  console.log("img", image);
+  // console.log("img", image);
 
   const pickImage = async () => {
     // No permissions request is necessary for launching the image library

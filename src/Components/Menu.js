@@ -10,7 +10,7 @@ const Navbar = () => {
   const route = useRoute();
 
   return (
-    <View className="absolute bottom-4 left-4 bg-white flex flex-row items-center justify-around p-1.5 w-11/12 rounded-lg shadow">
+    <View className="absolute bottom-0 bg-slate-50 flex flex-row items-center justify-around p-1.5 w-full">
       <TouchableOpacity
         className="p-2"
         onPress={() => navigation.navigate("Home")}
